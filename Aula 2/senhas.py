@@ -30,7 +30,6 @@ for i in range(len(senhas)):
             senhas[i] = nova_senha
             continuar = False
 
-
 print(senhas)
 
     

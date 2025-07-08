@@ -18,8 +18,6 @@ nome_sem_espaço = nome_completo.replace(" ", "")
 print(nome_sem_espaço)
 print(f"quntd de caracteres do nome : {len(nome_sem_espaço.strip())}")
 
-
-
 # Ex 2
 
 idade = int(input("Digite sua idade : "))
@@ -30,8 +28,6 @@ elif idade >= 13 and idade < 17:
     print("Adolescência")
 else:
     print("Adulto")
-
-
 
 # Ex 3
 
