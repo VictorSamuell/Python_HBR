@@ -33,8 +33,6 @@ for i in range(len(post_slugs)):
 
 print(full_urls)
 
-
-
 # Ex 3 
 
 # Lista de nomes de tags
