@@ -56,3 +56,32 @@ for i in range(len(catalogo)):
     print(f"\033[1;32mLivro {i+1}:\033[m \033[1;36m{catalogo[i]['titulo']}, por {catalogo[i]['autor']} ({catalogo[i]['ano']})\033[m")
 print("\n")
 
+# Exemplo: transformar uma lista em dicionário
+lista_chaves = ["nome", "idade", "cidade"]
+lista_valores = ["Ana", 25, "São Paulo"]
+
+dicionario = dict(zip(lista_chaves, lista_valores))
+print("Dicionário criado a partir de listas:", dicionario)
+
+
+# Exemplo de dicionário dentro de dicionário
+alunos = {
+    "aluno1": {
+        "nome": "Carlos",
+        "idade": 20,
+        "curso": "Engenharia"
+    },
+    "aluno2": {
+        "nome": "Marina",
+        "idade": 22,
+        "curso": "Medicina"
+    }
+}
+print(" alunos['aluno1']['nome']:", alunos['aluno1']['nome'])
+
+print("\n\033[1;4mInformações dos Alunos:\033[m\n")
+for chave, info in alunos.items():
+    print(f"{chave}:")
+    for campo, valor in info.items():
+        print(f"  {campo}: {valor}")
+    print()
