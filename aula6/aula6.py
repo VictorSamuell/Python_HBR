@@ -1,3 +1,11 @@
+import os
+
+def limpar_terminal():
+    if os.name == 'nt':
+        os.system('cls')
+
+limpar_terminal()
+
 def calculadora(a, b):
     
     ciclo = False
@@ -46,3 +54,19 @@ def mostrarMenu():
 
 
 mostrarMenu()
+
+
+
+def eh_maior_de_idade(idade):
+    if idade >= 18:
+        return True
+    else:
+        return False
+    
+age = int(input("Qual a sua idade : "))
+verificador = eh_maior_de_idade(age)
+
+if verificador:
+    print(f"Acesso Permitido")
+else:
+    print(f"Acesso Negado")
