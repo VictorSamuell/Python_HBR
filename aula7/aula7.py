@@ -31,11 +31,37 @@ def exibir_informacoes(**informacoes):
 exibir_informacoes(nome="João", idade=30, cidade="São Paulo")
 
 
+# titulo , autor="Equipe de Dados"
 
-def gerar_cabecalho(titulo, **opcoes):
+def gerar_c(titulo, **opcoes):
     print(f"{titulo}")
     for chave, valor in opcoes.items():
         print(f"{chave}: {valor}")
 
 
-gerar_cabecalho("Relatório de Vendas",vendedor="Maria")
+
+
+def gerar_relatorio_completo(titulo, autor="Equipe de Dados"):
+    print(f"Titulo: {titulo}")
+    print(f"Autor: {autor}")
+    
+gerar_relatorio_completo("Relatório Mensal")
+gerar_relatorio_completo("Relatório Anual", autor="João Silva")
+
+
+
+def montar_relatorio(titulo, *metricas, **informacoes_extras):
+    print(f"|| Relatório: {titulo} ||")
+    print("Métricas:")
+    for metrica in metricas:
+        print(f"| {metrica} |")
+    
+    print("Informações Extras:")
+    for chave, valor in informacoes_extras.items():
+        print(f"| {chave}: {valor} |")
+
+
+montar_relatorio("Relatório de Vendas", "Total: 1000", "Itens Vendidos: 800", data="18/06/2025", gerente="Sra. Silva")
+
+
+
