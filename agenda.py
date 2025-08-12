@@ -172,7 +172,6 @@ def listar_contato():
             listar_contato = []
             with open("agenda.json", "r", encoding="utf-8") as arquivo:
                 contatos_json = json.load(arquivo)
-                print(f"{contatos_json}")
                 for cont in contatos_json:
                     con = Contato(cont["nome"], cont["telefone"], cont["email"])
                     listar_contato.append(con)
