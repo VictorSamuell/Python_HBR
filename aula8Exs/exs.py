@@ -108,6 +108,4 @@ print("Localização:", user_data.get("location"))
 # 1. Após instalar os pacotes necessários no seu ambiente virtual, gere o arquivo requirements.txt.
 # 2. Simule uma nova instalação em outro ambiente com o comando adequado.
 
-# Para ignorar a pasta do ambiente virtual venv no Git, crie um arquivo chamado .gitignore na raiz do seu projeto e adicione a seguinte linha:
-
-venv/
+#coloquei no .gitignore para não subir o venv
