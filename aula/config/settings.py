@@ -73,6 +73,13 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -84,6 +91,20 @@ DATABASES = {
     }
 }
 
+
+# PS C:\Users\Aluno\Documents\Python_HBR> cd aula
+# PS C:\Users\Aluno\Documents\Python_HBR\aula> python manage.py shell
+# 9 objects imported automatically (use -v 2 for details).
+
+# Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+# Type "help", "copyright", "credits" or "license" for more information.
+# (InteractiveConsole)
+# >>> Post.objects.filter(autor__nome='Ana Coder', conteudo__icontains='web')
+# <QuerySet [<Post: Desenvolvimento Web Moderno>]>
+# >>> Otimização = Post.objects.filter(titulo='Otimizando Queries no Django')             
+# >>> print(f"{Otimização}")
+# <QuerySet [<Post: Otimizando Queries no Django>]>
+# >>> 
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
