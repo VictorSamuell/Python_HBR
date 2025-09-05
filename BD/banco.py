@@ -42,13 +42,22 @@
 #
 # cursor.close()
 # bd.close()
-
+#
+#
+# I
+# n
+# f
+# o
+# @
+# 1
+# 2
+# 3
 
 import mysql.connector as mysql
 from mysql.connector import Error
 
 try:
-    bd = mysql.connect(host='localhost', database='iftm2', user='root', password='Info@123')
+    bd = mysql.connect(host='localhost', database='iftm2', user='root', password='')
 
     if bd.is_connected():
         versao = bd.get_server_info()
