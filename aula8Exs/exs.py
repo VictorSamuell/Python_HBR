@@ -16,6 +16,8 @@ print("Data de ontem:", ontem)
 data1 = datetime.datetime(2023, 10, 1)
 data2 = datetime.datetime.now()
 diferenca = data2 - data1
+print("", diferenca)
+tomorrow = datetime.datetime.now() - datetime.datetime.timedelta(days=1)
 print("Diferença entre as datas:", diferenca.days, "dias")
 
 

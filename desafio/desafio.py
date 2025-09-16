@@ -295,7 +295,7 @@ def menu_principal():
         print("== 4 - Buscar Contato     ==")
         print("== 5 - Sair               ==")
         print("============================")
-
+        print("")
         try:
             op = input("Digite uma opção :")
         except Exception as e:
